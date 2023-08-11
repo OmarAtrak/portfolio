@@ -65,9 +65,10 @@ section{
 .main h2 span{
     display: inline-block;
     margin-top: 10px;
-    color:#4e9cff;
+    color:#ffff;
     font-size: 3em;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .main h3{
@@ -140,6 +141,7 @@ section{
     border-radius: 10px;
     margin: 20px;
     transition: .7s ease;
+    height: 550px;
 }
 
 .project-card:hover{
@@ -153,6 +155,7 @@ section{
 .project-image img{
     width: 100%;
     height: 13em;
+    border-bottom: 1px gray solid;
 }
 
 .project-info{
@@ -164,13 +167,16 @@ section{
     justify-content: space-between;
     text-transform: uppercase;
     font-weight: 800;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .more-details{
+    display: block;
     text-decoration: none;
     color: #3a6cf4;
     transition: .3s ease;
+    font-weight: 800;
+    margin-top: 10px;
 }
 
 .more-details:hover{
@@ -187,6 +193,11 @@ section{
 
 .footer .social-icons a{
     color: #ffff;
+}
+
+.footer .social-icons a:last-child{
+    color: #ffff;
+    margin-right: 20px;
 }
 
 .footer-title{
@@ -272,4 +283,108 @@ section{
 ::-webkit-scrollbar-thumb{
     background-color: silver;
     border-radius: 10px;
+}
+
+
+.project-details{
+    padding-top: 5px;
+}
+
+.project-details > p{
+    margin-top: 10px;
+}
+
+.project-details > p > span{
+    font-weight: 600;
+}
+
+.project-details > ul > li{
+    margin-left: 30px;
+}
+
+.link{
+    color: black;
+    text-decoration: none;
+}
+
+.link > .languages:hover{
+    color: black;
+    text-decoration: underline;
+}
+.link > .framework:hover{
+    color: black;
+    text-decoration: underline;
+}
+.link > .database:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.languages{
+    padding: 0px 5px;
+    background-color: aquamarine;
+    border-radius: 25px;
+}
+
+.framework{
+    padding: 0px 5px;
+    background-color: rgb(145, 244, 255);
+    border-radius: 25px;
+}
+
+.database{
+    padding: 0px 5px;
+    background-color: rgb(118, 191, 250);
+    border-radius: 25px;
+}
+
+.program{
+    padding: 0px 5px;
+    background-color: rgb(235, 250, 118);
+    border-radius: 25px;
+}
+
+.formation-content{
+    display: flex;
+    /* justify-content: ; */
+}
+
+.time-line{
+    width: 10%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 30px;
+}
+
+.formation-details{
+    padding: 10px;
+    width: 55%;
+    height: 100px;
+    border-radius: 25px;
+    border: 1px #cdcdcd solid;
+    margin-bottom: 20px;
+}
+
+.formation-details > p > a{
+    color: blue;
+    text-decoration: none;
+}
+
+.formation-details > p > a:hover{
+    text-decoration: underline;
+}
+
+.program:hover{
+    text-decoration: underline;
+}
+
+#name{
+    color: #1de1ff;
+    font-size:24px;
+}
+
+.line{
+    border: 1px black solid;
 }
