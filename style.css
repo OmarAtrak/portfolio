@@ -356,6 +356,8 @@ section{
     justify-content: center;
     justify-items: center;
     padding-top: 30px;
+    border-right: 1px black solid;
+    margin-right: 20px;
 }
 
 .formation-details{
@@ -385,6 +387,6 @@ section{
     font-size:24px;
 }
 
-.line{
+/* .line{
     border: 1px black solid;
-}
+} */
