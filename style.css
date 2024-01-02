@@ -429,3 +429,9 @@ section{
     padding: 0px 10px;
     color: white;
 }
+
+.language{
+    position: fixed;
+    top: 15px;
+    right: 20px;
+}

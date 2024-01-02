@@ -3,9 +3,447 @@
 <head>
     <meta charset="UTF-8">
     <title>Omar Atrak</title>
-    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="stylesheet" href="style.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            font-family:'Poppins','sans-serif';
+        }
+
+        header{
+            /* background-color: #f0f0f0; */
+            background-color: #0f0f24;
+            color: #ffff;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px;
+            /* border-bottom: black 1px solid; */
+        }
+
+        .logo{
+            text-decoration: none;
+            /* color: #3a6cf4; */
+            color: #ffff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+
+        .navigation a{
+            /* color:#3a6cf4; */
+            color: #ffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-left: 30px;
+            transition: color .4s ease;
+        }
+
+        .navigation a:hover{
+            /* color:#601c8c; */
+            color:#dfdfdf;
+        }
+
+        section{
+            padding: 100px 200px;
+        }
+
+        .main{
+            width:100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background-image: url("images/css_coding-wallpaper-1366x768.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .main h2{
+            color: #fefefe;
+            font-size: 1.4em;
+            font-weight: 500;
+        }
+
+        .main h2 span{
+            display: inline-block;
+            margin-top: 10px;
+            color:#ffff;
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .main h3{
+            color: #ffff;
+            font-size: 2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .main-btn{
+            color: #ffff;
+            background-color:#3a6cf4;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: inline-block;
+            padding: 0.9375em 2.1875em;
+            letter-spacing: 1px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            margin-left: 30px;
+            transition: all .4s ease;
+        }
+
+        .main-btn:hover{
+            background-color: #0a49f6;
+            transform: scale(1.1);
+        }
+
+        .social-icons a{
+            color:black;
+            font-size: 1.7em;
+            margin-left: 30px;
+            transition: .2s ease-in;
+        }
+
+        .title{
+            display: flex;
+            justify-content: center;
+            color: #3a6cf4;
+            font-size: 2.2em;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        .content{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .projects{
+            /* background-color: #0f0f24; */
+            background-color: #f0f0f0;
+            padding: 100px 100px;
+        }
+
+        .projects .content{
+            margin-top: 30px;
+        }
+
+        .project-card{
+            background-color: #ffff;
+            /* border: 1px solid white; */
+            border: 1px solid gainsboro;
+            min-height: 14em;
+            width: 23em;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 20px;
+            transition: .7s ease;
+            height: 550px;
+        }
+
+        .project-card:hover{
+            transform: scale(1.1);
+        }
+
+        .project-card:hover .project-image{
+            opacity: 0.9;
+        }
+
+        .project-image{
+            margin-bottom: 0px;
+            border-bottom: 1px rgb(200, 200, 200) solid;
+        }
+
+        .project-image img{
+            width: 100%;
+            height: 13em;
+        }
+
+        .project-info{
+            padding: 1em;
+        }
+
+        .project-title{
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .more-details{
+            display: block;
+            text-decoration: none;
+            color: #3a6cf4;
+            transition: .3s ease;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+        .more-details:hover{
+            color: #601c8c;
+        }
+
+        .footer{
+            background-color: #0f0f24;
+            color: #ffff;
+            /* padding: 0.1em; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer .social-icons a{
+            color: #ffff;
+        }
+
+        .footer .social-icons a:last-child{
+            color: #ffff;
+            margin-right: 20px;
+        }
+
+        .footer-title{
+            /* font-size: 1.3em;
+            font-weight: 600; */
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .footer-title span{
+            color: #3a6cf4;
+        }
+
+
+        .card{
+            border-radius: 15px;
+            padding: 20px;
+            width: 18em;
+            height: 14em;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 2em;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(100,100,100,.4);
+            transition: .7s ease;
+            background-color: #fefefe;
+        }
+
+        .card:hover{
+            transform: scale(1.1);
+            background-color:rgb(247, 247, 247);
+        }
+
+        .card .icon{
+            font-size: 32px;
+            font-weight: 500;
+            color: #3a6cf4;
+            margin-bottom: 20px;
+        }
+
+        .card .info h3{
+            margin-bottom: 5px;
+        }
+
+        .card .info p , .card .info p a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        .card .info p a:hover{
+            text-decoration: underline;
+        }
+
+        .content-main{
+            border-radius: 15px;
+            background-color: rgba(100,100,100,.4);
+            padding: 10px;
+            width: 70%;
+        }
+
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: silver;
+            border-radius: 10px;
+        }
+
+
+        .project-details{
+            padding-top: 5px;
+        }
+
+        .project-details > p{
+            margin-top: 10px;
+        }
+
+        .project-details > p > span{
+            font-weight: 600;
+        }
+
+        .project-details > ul > li{
+            margin-left: 30px;
+        }
+
+        .link{
+            color: black;
+            text-decoration: none;
+        }
+
+        .link > .languages:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        .link > .framework:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        .link > .database:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        .languages{
+            padding: 0px 5px;
+            background-color: aquamarine;
+            border-radius: 25px;
+        }
+
+        .framework{
+            padding: 0px 5px;
+            background-color: rgb(145, 244, 255);
+            border-radius: 25px;
+        }
+
+        .database{
+            padding: 0px 5px;
+            background-color: rgb(118, 191, 250);
+            border-radius: 25px;
+        }
+
+        .program{
+            padding: 0px 5px;
+            background-color: rgb(235, 250, 118);
+            border-radius: 25px;
+        }
+
+        .formation{
+            /* border-bottom: black 1px solid; */
+            background-color: #f0f0f0;
+        }
+
+        .formation-content, .experience-content{
+            display: flex;
+        }
+
+        .formation-content .time-line{
+            width: 10%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding-top: 30px;
+            border-right: 1px black solid;
+            margin-right: 20px;
+        }
+
+        .experience-content .time-line{
+            width: 15%;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding-top: 30px;
+            border-right: 1px black solid;
+            margin-right: 20px;
+        }
+
+        .formation-details{
+            height: 100px;
+        }
+
+        .experience-details{
+            height: 120px;
+        }
+
+        .formation-details, .experience-details{
+            padding: 10px;
+            width: 55%;
+            border-radius: 10px;
+            border: 1px #cdcdcd solid;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px gainsboro;
+        }
+
+        .formation-details > p > a{
+            color: blue;
+            text-decoration: none;
+        }
+
+        .formation-details > p > a:hover{
+            text-decoration: underline;
+        }
+
+        .program:hover{
+            text-decoration: underline;
+        }
+
+        #name{
+            color: #1de1ff;
+            font-size:24px;
+        }
+
+        /* .formation-content .line{
+            border: 1px black solid;
+            position: relative;
+            top: 27px;
+            right: 52px;
+            height: 90px;
+        }
+
+        .experience-content .line{
+            border: 1px black solid;
+            position: relative;
+            top: 27px;
+            right: 52px;
+            height: 90px;
+        } */
+
+        .date{
+            background-color: green;
+            border-radius: 5px;
+            padding: 0px 10px;
+            color: white;
+        }
+
+        .language{
+            position: fixed;
+            top: 15px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,6 +453,11 @@
             <!-- <a href="#projects">Projects</a> -->
             <a href="#projects">Projets</a>
             <a href="#contact">Contact</a>
+            <div class="language">
+                <button class="btn">
+                    <img src="./images/englishFlag.png" aria-placeholder="language" alt="language">
+                </button>
+            </div>
         </nav>
     </header>
     
@@ -47,18 +490,6 @@
         <h2 class="title">Formations</h2>
         <div class="formation-content">
             <div class="time-line">
-                <p><span class="date">2023-2024</span></p>
-                <div class="line">
-                </div>
-            </div>
-            <div class="formation-details">
-                <p><a href="https://www.enset-media.ac.ma/" target="_blank"><i class="fa-solid fa-school"></i> ENSET Mohammedia</a></p>
-                <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Première Année Master Universitaire "Ingénierie Informatique, Big Data et Cloud Computing"</p>
-            </div>
-        </div>
-        <div class="formation-content">
-            <div class="time-line">
                 <p><span class="date">2022-2023</span></p>
                 <div class="line">
                 </div>
@@ -66,7 +497,7 @@
             <div class="formation-details">
                 <p><a href="https://cigma.org/" target="_blank"><i class="fa-solid fa-school"></i> CIGMA FST Settat</a></p>
                 <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Diplôme Licence Universitaire "DÉVELOPPEMENT WEB FULL STACK ET DEVOPS"</p>
+                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Diplôme Licence Universitaire Professionnelle "DÉVELOPPEMENT WEB FULL STACK ET DEVOPS"</p>
             </div>
         </div>
         <div class="formation-content">
@@ -89,7 +520,7 @@
             </div>
             <div class="formation-details">
                 <!-- <p><a href="https://www.ofppt.ma/"><i class="fa-solid fa-school"></i> Al Jazeera Secondary School</a></p> -->
-                <p class="link"><i class="fa-solid fa-school"></i> Lycée Al Jazeera</p>
+                <p><a href="https://www.ofppt.ma/"><i class="fa-solid fa-school"></i> Lycée Al Jazeera</a></p>
                 <!-- <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Riyadh Saudi Arabia</p> -->
                 <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Riyad Arabie Saoudite</p>
                 <p><i class="fa-solid fa-certificate" style="color: gold"></i> Baccalauréat "Science Vie et Terre"</p>
