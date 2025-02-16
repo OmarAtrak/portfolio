@@ -5,21 +5,21 @@
     <title>Omar Atrak</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-
+    <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Omar</a>
+    <header class="position-fixed d-flex justify-content-between text-white p-3 w-100" style="background-color: #0f0f24;">
+        <a class="nav-link fw-bold" href="/index.html">OMAR</a>
+
         <nav class="navigation">
             <a href="#formation">Formations</a>
-            <!-- <a href="#projects">Projects</a> -->
             <a href="#projects">Projets</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    
-    <section class="main">
-        <div class="content-main">
+
+    <section class="main px-5 pt-5">
+        <div class="content-main mt-5">
             <!-- <h2>Hello I'm Omar<br/><span>Front-End Web Developer</span></h2> -->
             <h2>
                 Bienvenue
@@ -43,91 +43,97 @@
         </div>
     </section>
 
-    <section class="formation" id="formation">
+    <section class="formation pt-5 pb-5" id="formation">
         <h2 class="title">Formations</h2>
-        <div class="formation-content">
-            <div class="time-line">
-                <p><span class="date">2023-2024</span></p>
-                <div class="line">
+
+        <div class="row d-flex justify-content-center p-0" style="width: 99%;">
+            <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
+                <span class="date">2023 - 2025</span>
+            </div>
+            <div class="col col-6">
+                <div class="border border-1 rounded-4 p-3">
+                    <p><a href="https://www.enset-media.ac.ma/" class="nav-link text-primary" target="_blank"><i class="fa-solid fa-school"></i> ENSET Mohammedia</a></p>
+                    <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
+                    <p><i class="fa-solid fa-certificate" style="color: gold"></i> Deuxéme Année Master Universitaire "Ingénierie Informatique, Big Data et Cloud Computing"</p>
                 </div>
-            </div>
-            <div class="formation-details">
-                <p><a href="https://www.enset-media.ac.ma/" target="_blank"><i class="fa-solid fa-school"></i> ENSET Mohammedia</a></p>
-                <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Première Année Master Universitaire "Ingénierie Informatique, Big Data et Cloud Computing"</p>
-            </div>
+            </tr>
         </div>
-        <div class="formation-content">
-            <div class="time-line">
-                <p><span class="date">2022-2023</span></p>
-                <div class="line">
+        <div class="row d-flex justify-content-center p-0 mt-4">
+            <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
+                <span class="date">2022 - 2023</span>
+            </div>
+            <div class="col col-6">
+                <div class="border border-1 rounded-4 p-3">
+                    <p><a href="https://cigma.org/" class="nav-link text-primary" target="_blank"><i class="fa-solid fa-school"></i> CIGMA FST Settat</a></p>
+                    <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
+                    <p><i class="fa-solid fa-certificate" style="color: gold"></i> Diplôme Licence Universitaire "Développement Web Full Stavk et DevOps"</p>
                 </div>
-            </div>
-            <div class="formation-details">
-                <p><a href="https://cigma.org/" target="_blank"><i class="fa-solid fa-school"></i> CIGMA FST Settat</a></p>
-                <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Diplôme Licence Universitaire "DÉVELOPPEMENT WEB FULL STACK ET DEVOPS"</p>
-            </div>
+            </tr>
         </div>
-        <div class="formation-content">
-            <div class="time-line">
-                <p><span class="date">2020-2022</span></p>
-                <div class="line">
+        <div class="row d-flex justify-content-center p-0 mt-4">
+            <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
+                <span class="date">2020 - 2022</span>
+            </div>
+            <div class="col col-6">
+                <div class="border border-1 rounded-4 p-3">
+                    <p><a href="https://www.ofppt.ma/" class="nav-link text-primary"><i class="fa-solid fa-school"></i> OFPPT ISTA</a></p>
+                    <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
+                    <p><i class="fa-solid fa-certificate" style="color: gold"></i> Diplôme "Technicien Spécialisé en Développement Informatique"</p>
                 </div>
-            </div>
-            <div class="formation-details">
-                <p><a href="https://www.ofppt.ma/"><i class="fa-solid fa-school"></i> OFPPT ISTA</a></p>
-                <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Casablanca</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Diplôme "Technicien Spécialisé en Développement Informatique"</p>
-            </div>
+            </tr>
         </div>
-        <div class="formation-content">
-            <div class="time-line">
-                <p><span class="date">2018-2019</span></p>
-                <div class="line">
+        <div class="row d-flex justify-content-center p-0 mt-4">
+            <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
+                <span class="date">2018 - 2019</span>
+            </div>
+            <div class="col col-6">
+                <div class="border border-1 rounded-4 p-3">
+                    <p><a class="nav-link text-primary"><i class="fa-solid fa-school"></i>  Lycée Al Jazeera</a></p>
+                    <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Riyad Arabie Saoudite</p>
+                    <p><i class="fa-solid fa-certificate" style="color: gold"></i> Baccalauréat "Science Vie et Terre"</p>
                 </div>
-            </div>
-            <div class="formation-details">
-                <!-- <p><a href="https://www.ofppt.ma/"><i class="fa-solid fa-school"></i> Al Jazeera Secondary School</a></p> -->
-                <p class="link"><i class="fa-solid fa-school"></i> Lycée Al Jazeera</p>
-                <!-- <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Riyadh Saudi Arabia</p> -->
-                <p><i class="fa-solid fa-location-dot" style="color: red;"></i> Riyad Arabie Saoudite</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Baccalauréat "Science Vie et Terre"</p>
-            </div>
+            </tr>
         </div>
     </section>
 
-    <section class="experience" id="experience">
+    <section class="experience pt-5 pb-5" id="experience">
         <h2 class="title">Experience Professionnelle</h2>
-        <div class="experience-content">
-            <div class="time-line">
-                <p><span class="date">7 aoû 2023 - en cours</span></p>
-                <div class="line">
+
+        <div class="d-flex justify-content-center">
+            <div class="row d-flex justify-content-center p-0 m-0" style="width: 99%;">
+                <div class="col col-3 d-flex align-items-center border-end border-1 border-black">
+                    <span class="date">7 aoû 2023 - en cours</span>
                 </div>
+                <div class="col col-6">
+                    <div class="border border-1 rounded-4 p-3">
+                        <p><strong><i class="fa-regular fa-building"></i> CANELIA</strong> - CDI</p>
+                        <p><i class="fa-solid fa-certificate" style="color: gold"></i> Développeur Front End</p>
+                        <p>
+                            Je travaille chez Caneila en tant que développeur web front-end, où je crée des interfaces utilisateur
+                            réactives et visuellement attrayantes en utilisant HTML, CSS, JavaScript, TypeScript, tout en intégrant des
+                            frameworks comme Angular, Vue pour des fonctionnalités dynamiques. Je collabore avec les développeurs
+                            back-end pour livrer des applications web fluides et optimisées, en assurant la compatibilité entre
+                            navigateurs et l'efficacité des performances.
+                        </p>
+                    </div>
+                </tr>
             </div>
-            <div class="experience-details">
-                <p><strong>Travail</strong></p>
-                <p><i class="fa-regular fa-building"></i> CANELIA</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Assistant Développeur</p>
-                <p></p>
-            </div>
-        </div>
-        <div class="experience-content">
-            <div class="time-line">
-                <p><span class="date">14 nov 2022 - 31 jan 2023</span></p>
-                <div class="line">
+            <div class="row d-flex justify-content-center mt-4" style="width: 99%; padding-left: 4px;">
+                <div class="col col-3 d-flex align-items-center border-end border-1 border-black">
+                    <span class="date">14 nov 2022 - 31 jan 2023</span>
                 </div>
-            </div>
-            <div class="experience-details">
-                <p><strong>Stage</strong></p>
-                <p><i class="fa-regular fa-building"></i> SOTHCOM</p>
-                <p><i class="fa-solid fa-certificate" style="color: gold"></i> Développeur System d'information</p>
-                <p>Création d'une Application Desktop pour Gérer les Affaires et la caisse de Société</p>
+                <div class="col col-6">
+                    <div class="border border-1 rounded-4 p-3">
+                        <p><strong><i class="fa-regular fa-building"></i> SOTHCOM</strong> - Stage</p>
+                        <p><i class="fa-solid fa-certificate" style="color: gold"></i> Développeur System d'information</p>
+                        <p>Création d'une Application Desktop pour Gérer les Affaires et la caisse de Société</p>
+                    </div>
+                </tr>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects pt-5 pb-5" id="projects">
         <h2 class="title">Projets</h2>
         <div class="content">
             <div class="project-card">
@@ -337,7 +343,7 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact pt-5 pb-5" id="contact">
         <!-- <h2 class="title">Let's Work Together</h2> -->
         <h2 class="title">Contactez Moi</h2>
         <div class="content">
