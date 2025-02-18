@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="position-fixed d-flex justify-content-between text-white p-3 w-100" style="background-color: #0f0f24;">
+    <header class="position-fixed d-flex justify-content-between text-white p-3 w-100" style="background-color: #0f0f24; z-index: 1080;">
         <a class="nav-link fw-bold" href="/index.html">OMAR</a>
 
         <nav class="navigation">
@@ -43,10 +43,12 @@
         </div>
     </section>
 
+    <!-- formations -->
     <section class="formation pt-5 pb-5" id="formation">
         <h2 class="title">Formations</h2>
 
         <div class="row d-flex justify-content-center p-0" style="width: 99%;">
+            <div class="col col-2"></div>
             <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
                 <span class="date">2023 - 2025</span>
             </div>
@@ -59,6 +61,7 @@
             </tr>
         </div>
         <div class="row d-flex justify-content-center p-0 mt-4">
+            <div class="col col-2"></div>
             <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
                 <span class="date">2022 - 2023</span>
             </div>
@@ -71,6 +74,7 @@
             </tr>
         </div>
         <div class="row d-flex justify-content-center p-0 mt-4">
+            <div class="col col-2"></div>
             <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
                 <span class="date">2020 - 2022</span>
             </div>
@@ -83,6 +87,7 @@
             </tr>
         </div>
         <div class="row d-flex justify-content-center p-0 mt-4">
+            <div class="col col-2"></div>
             <div class="col col-2 d-flex align-items-center border-end border-1 border-black">
                 <span class="date">2018 - 2019</span>
             </div>
@@ -96,11 +101,13 @@
         </div>
     </section>
 
+    <!-- experiences -->
     <section class="experience pt-5 pb-5" id="experience">
         <h2 class="title">Experience Professionnelle</h2>
 
         <div class="d-flex justify-content-center">
             <div class="row d-flex justify-content-center p-0 m-0" style="width: 99%;">
+                <div class="col col-1"></div>
                 <div class="col col-3 d-flex align-items-center border-end border-1 border-black">
                     <span class="date">7 aoû 2023 - en cours</span>
                 </div>
@@ -119,6 +126,7 @@
                 </tr>
             </div>
             <div class="row d-flex justify-content-center mt-4" style="width: 99%; padding-left: 4px;">
+                <div class="col col-1"></div>
                 <div class="col col-3 d-flex align-items-center border-end border-1 border-black">
                     <span class="date">14 nov 2022 - 31 jan 2023</span>
                 </div>
@@ -133,216 +141,193 @@
         </div>
     </section>
 
+    <!-- projects -->
     <section class="projects pt-5 pb-5" id="projects">
         <h2 class="title">Projets</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/_school.jpg">
+
+        <div class="row d-flex justify-content-center">
+            <div class="card col col-4">
+                <img src="images/_school.jpg" class="card-img-top" alt="..." height="250px">
+                <div class="card-body text-start">
+                    <h5 class="card-title">School</h5>
+                    <p class="card-text">Gestion Ecole</p>
+                    <p><strong>Type</strong>: Web Application</p>
+                    <p>
+                        <strong>Languages</strong>:
+                        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="link">
+                            <spam class="languages">C#</spam>
+                        </a>
+                        <spam class="languages">CSS</spam>
+                        <spam class="languages">Javascript</spam>
+                    </p>
+                    <p>
+                        <strong>Framework</strong>:
+                        <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" class="link">
+                            <spam class="framework">ASP.NET</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <!-- <span>Database</span>: -->
+                        <strong>Base de Données</strong>:
+                        <a href="https://fr.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank" class="link">
+                            <spam class="database">SQL Server</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Logiciel</strong>:
+                        <a href="https://visualstudio.microsoft.com/fr/downloads/" target="_blank" class="link">
+                            <spam class="program">Visual Studio</spam>
+                        </a>
+                    </p>
                 </div>
-                <div class="project-info">
-                    <strong class="project-title">
-                        <span>School</span>
-                    </strong>
-                    <!-- <p class="project-category">Programming & School</p> -->
-                    <p class="project-category">Gestion Ecole</p>
-                    <div class="project-details">
-                        <p><span>Type</span>: Web Application</p>
-                        <p>
-                            <span>Languages</span>:
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="link">
-                                <spam class="languages">C#</spam>
-                            </a>
-                            <spam class="languages">CSS</spam>
+                <!-- <div class="card-footer">
+                    <a href="https://github.com/OmarAtrak/Site-Web-Ecole" target="_blank" class="btn-link">Code Source</a>
+                </div> -->
+            </div>
+
+            <div class="card col col-4">
+                <img src="images/XO.png" class="card-img-top" alt="..." height="250px">
+                <div class="card-body text-start">
+                    <h5 class="card-title">X O</h5>
+                    <p class="card-text">X & O jeu</p>
+                    <p><strong>Type</strong>: Web</p>
+                    <p>
+                        <strong>Languages</strong>:
+                        <spam class="languages">HTML</spam>
+                        <spam class="languages">CSS</spam>
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" class="link">
                             <spam class="languages">Javascript</spam>
-                        </p>
-                        <p>
-                            <span>Framework</span>:
-                            <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" class="link">
-                                <spam class="framework">ASP.NET</spam>
-                            </a>
-                        </p>
-                        <p>
-                            <!-- <span>Database</span>: -->
-                            <span>Base de Données</span>:
-                            <a href="https://fr.wikipedia.org/wiki/Microsoft_SQL_Server" target="_blank" class="link">
-                                <spam class="database">SQL Server</spam>
-                            </a>
-                        </p>
-                        <p>
-                            <span>Logiciel</span>:
-                            <a href="https://visualstudio.microsoft.com/fr/downloads/" target="_blank" class="link">
-                                <spam class="program">Visual Studio</spam>
-                            </a>
-                        </p>
-                    </div>
-                    <a href="https://github.com/OmarAtrak/Site-Web-Ecole" target="_blank" class="more-details">Code Source</a>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Logiciel</strong>:
+                        <a href="https://code.visualstudio.com/" target="_blank" class="link">
+                            <spam class="program">Visual Studio Code</spam>
+                        </a>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/OmarAtrak/X-O-Game" target="_blank" class="btn-link">Code Source</a>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/XO.png">
+
+            <div class="card col col-4">
+                <img src="images/affaire.png" class="card-img-top" alt="..." height="250px">
+                <div class="card-body text-start">
+                    <h5 class="card-title">Affaire</h5>
+                    <p class="card-text">Gestion des Charges d'affaire</p>
+                    <p><strong>Type</strong>: Desktop Application</p>
+                    <p>
+                        <strong>Languages</strong>:
+                        <a href="https://learn.microsoft.com/fr-FR/dotnet/csharp/" target="_blank" class="link">
+                            <spam class="languages">C#</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Framework</strong>:
+                        <a href="https://fr.wikipedia.org/wiki/.NET_Framework" target="_blank" class="link">
+                            <spam class="framework">.Net</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <!-- <strong>Database</strong>: -->
+                        <strong>Base de Données</strong>:
+                        <a href="https://learn.microsoft.com/fr-FR/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16" target="_blank" class="link">
+                            <spam class="database">SQL Server</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Logiciel</strong>:
+                        <a href="https://visualstudio.microsoft.com/fr/downloads/" target="_blank" class="link">
+                            <spam class="program">Visual Studio</spam>
+                        </a>
+                    </p>
                 </div>
-                <div class="project-info">
-                    <strong class="project-title">
-                        <!-- <span>[X & O] Game</span> -->
-                        <span>X O</span>
-                    </strong>
-                    <!-- <p class="project-category">Programming & Gaming</p> -->
-                    <p class="project-category">X & O jeu</p>
-                    <div class="project-details">
-                        <p><span>Type</span>: Web Application</p>
-                        <p>
-                            <span>Languages</span>:
-                            <spam class="languages">HTML</spam>
-                            <spam class="languages">CSS</spam>
-                            <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" class="link">
-                                <spam class="languages">Javascript</spam>
-                            </a>
-                        </p>
-                        <p>
-                            <span>Logiciel</span>:
-                            <a href="https://code.visualstudio.com/" target="_blank" class="link">
-                                <spam class="program">Visual Studio Code</spam>
-                            </a>
-                        </p>
-                    </div>
-                    <a href="https://github.com/OmarAtrak/X-O-Game" target="_blank" class="more-details">Code Source</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/affaire.png">
-                </div>
-                <div class="project-info">
-                    <strong class="project-title">
-                        <span>Affaire</span>
-                    </strong>
-                    <p class="project-category">Gestion des Charges d'affaire</p>
-                    <div class="project-details">
-                        <p><span>Type</span>: Desktop Application</p>
-                        <p>
-                            <span>Language</span>:
-                            <a href="https://learn.microsoft.com/fr-FR/dotnet/csharp/" target="_blank" class="link">
-                                <spam class="languages">C#</spam>
-                            </a>
-                        </p>
-                        <p>
-                            <span>Framework</span>:
-                            <a href="https://fr.wikipedia.org/wiki/.NET_Framework" target="_blank" class="link">
-                                <spam class="framework">.Net</spam>
-                            </a>
-                        </p>
-                        <p>
-                            <!-- <span>Database</span>: -->
-                            <span>Base de Données</span>:
-                            <a href="https://learn.microsoft.com/fr-FR/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16" target="_blank" class="link">
-                                <spam class="database">SQL Server</spam>
-                            </a>
-                        </p>
-                        <p>
-                            <span>Logiciel</span>:
-                            <a href="https://visualstudio.microsoft.com/fr/downloads/" target="_blank" class="link">
-                                <spam class="program">Visual Studio</spam>
-                            </a>
-                        </p>
-                    </div>
-                    <a href="https://github.com/OmarAtrak/Gestion-des-Affaires-Pro" target="_blank" class="more-details">Code Source</a>
+                <div class="card-footer">
+                    <a href="https://github.com/OmarAtrak/Gestion-des-Affaires-Pro" target="_blank" class="btn-link">Code Source</a>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/tram.png" class="tram-img">
+
+            <div class="card col col-4">
+                <img src="images/tram.png" class="card-img-top" alt="..." height="250px">
+                <div class="card-body text-start">
+                    <h5 class="card-title">Casa Tram</h5>
+                    <p class="card-text">Gestion Transport (Tram)</p>
+                    <p><strong>Type</strong>: Mobile Application</p>
+                    <p>
+                        <strong>Languages</strong>:
+                        <a href="https://dart.dev/" target="_blank" class="link">
+                            <spam class="languages">Dart</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Framework</strong>:
+                        <a href="https://flutter.dev/" target="_blank" class="link">
+                            <spam class="framework">Flutter</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Base de Données</strong>:
+                        <a href="https://firebase.google.com/?gad=1&gclid=Cj0KCQjwuNemBhCBARIsADp74QQSYoyY5Y8-IqvyeVFKX4vubzbjIzHsdd7Z6hpzNY-CUVtYJqXDMpcaAtSkEALw_wcB&gclsrc=aw.ds" target="_blank" class="link">
+                            <spam class="database">Firebase</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Logiciel</strong>:
+                        <a href="https://code.visualstudio.com/" target="_blank" class="link">
+                            <spam class="program">Visual Studio Code</spam>
+                        </a>
+                    </p>
                 </div>
-                <div class="project-info">
-                    <div>
-                        <strong class="project-title">
-                            <span>Casa Tram</span>
-                        </strong>
-                        <p class="project-category">Gestion Tram</p>
-                        <div class="project-details">
-                            <p><span>Type</span>: Mobile Application</p>
-                            <p>
-                                <span>Languages</span>:
-                                <a href="https://dart.dev/" target="_blank" class="link">
-                                    <spam class="languages">Dart</spam>
-                                </a>
-                            </p>
-                            <p>
-                                <span>Framework</span>:
-                                <a href="https://flutter.dev/" target="_blank" class="link">
-                                    <spam class="framework">Flutter</spam>
-                                </a>
-                            </p>
-                            <p>
-                                <span>Base de Données</span>:
-                                <a href="https://firebase.google.com/?gad=1&gclid=Cj0KCQjwuNemBhCBARIsADp74QQSYoyY5Y8-IqvyeVFKX4vubzbjIzHsdd7Z6hpzNY-CUVtYJqXDMpcaAtSkEALw_wcB&gclsrc=aw.ds" target="_blank" class="link">
-                                    <spam class="database">Firebase</spam>
-                                </a>
-                            </p>
-                            <p>
-                                <span>Logiciel</span>:
-                                <a href="https://code.visualstudio.com/" target="_blank" class="link">
-                                    <spam class="program">Visual Studio Code</spam>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <a href="https://github.com/OmarAtrak/TramApp" target="_blank" class="more-details">Code Source</a>
+                <div class="card-footer">
+                    <a href="https://github.com/OmarAtrak/TramApp" target="_blank" class="btn-link">Code Source</a>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image" style="display: flex; justify-content: center;">
-                    <img src="images/topchef.png" style="width: 250px;" class="tram-img">
-                </div>
-                <div class="project-info">
-                    <div>
-                        <strong class="project-title">
-                            <span>Top Chef</span>
-                        </strong>
-                        <p class="project-category">Projet Commercial</p>
-                        <div class="project-details">
-                            <p><span>Type</span>: Web Application</p>
-                            <p>
-                                <span>Languages</span>:
-                                <spam class="languages">HTML</spam>
-                                <spam class="languages">CSS</spam>
-                                <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" class="link">
-                                    <spam class="languages">Javascript</spam>
-                                </a>
-                                <a href="https://www.typescriptlang.org/" target="_blank" class="link">
-                                    <spam class="languages">Typescript</spam>
-                                </a>
-                            </p>
-                            <p>
-                                <span>Framework</span>:
-                                <a href="https://vuejs.org/" target="_blank" class="link">
-                                    <spam class="framework">Vue.js</spam>
-                                </a>
-                                <a href="https://getbootstrap.com/" target="_blank" class="link">
-                                    <spam class="framework">Bootstrap</spam>
-                                </a>
-                            </p>
-                            <p>
-                                <span>Base de Données</span>:
-                                <a href="https://www.mysql.com/fr/" target="_blank" class="link">
-                                    <spam class="database">MySQL</spam>
-                                </a>
-                            </p>
-                            <p>
-                                <span>Logiciel</span>:
-                                <a href="https://code.visualstudio.com/" target="_blank" class="link">
-                                    <spam class="program">Visual Studio Code</spam>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                    <a href="https://github.com/OmarAtrak/TramApp" target="_blank" class="more-details">Code Source</a>
+
+            <div class="card col col-4">
+                <img src="images/topchef.png" class="card-img-top" alt="..." height="250px">
+                <div class="card-body text-start">
+                    <h5 class="card-title">Top Chef</h5>
+                    <p class="card-text">Projet Commercial</p>
+                    <p><strong>Type</strong>: Web Application</p>
+                    <p>
+                        <strong>Languages</strong>:
+                        <spam class="languages">HTML</spam>
+                        <spam class="languages">CSS</spam>
+                        <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank" class="link">
+                            <spam class="languages">Javascript</spam>
+                        </a>
+                        <a href="https://www.typescriptlang.org/" target="_blank" class="link">
+                            <spam class="languages">Typescript</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Framework</strong>:
+                        <a href="https://vuejs.org/" target="_blank" class="link">
+                            <spam class="framework">Vue.js</spam>
+                        </a>
+                        <a href="https://getbootstrap.com/" target="_blank" class="link">
+                            <spam class="framework">Bootstrap</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Base de Données</strong>:
+                        <a href="https://www.mysql.com/fr/" target="_blank" class="link">
+                            <spam class="database">MySQL</spam>
+                        </a>
+                    </p>
+                    <p>
+                        <strong>Logiciel</strong>:
+                        <a href="https://code.visualstudio.com/" target="_blank" class="link">
+                            <spam class="program">Visual Studio Code</spam>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- contacts -->
     <section class="contact pt-5 pb-5" id="contact">
         <!-- <h2 class="title">Let's Work Together</h2> -->
         <h2 class="title">Contactez Moi</h2>
@@ -386,5 +371,6 @@
         document.getElementById('year').innerText = date.getFullYear();
         document.getElementById('age').innerText += ' ' + (date.getFullYear() - 2001) + 'ans';
     </script>
+    <script src="./styles/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
