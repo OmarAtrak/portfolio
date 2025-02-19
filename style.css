@@ -21,16 +21,6 @@
     color:#dfdfdf;
 }
 
-.main{
-    width:100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url("images/css_coding-wallpaper-1366x768.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .main h2{
     color: #fefefe;
     font-size: 1.4em;
@@ -99,7 +89,6 @@
 }
 
 .projects{
-    /* background-color: #0f0f24; */
     background-color: #f0f0f0;
     padding: 100px 100px;
 }
@@ -110,7 +99,6 @@
 
 .project-card{
     background-color: #ffff;
-    /* border: 1px solid white; */
     border: 1px solid gainsboro;
     min-height: 14em;
     width: 23em;
@@ -167,7 +155,6 @@
 .footer{
     background-color: #0f0f24;
     color: #ffff;
-    /* padding: 0.1em; */
     display: flex;
     justify-content: space-between;
 }
@@ -182,8 +169,6 @@
 }
 
 .footer-title{
-    /* font-size: 1.3em;
-    font-weight: 600; */
     font-size: 18px;
     font-weight: 500;
     margin-left: 10px;
@@ -233,13 +218,6 @@
 
 .card .info p a:hover{
     text-decoration: underline;
-}
-
-.content-main{
-    border-radius: 15px;
-    background-color: rgba(100,100,100,.4);
-    padding: 10px;
-    width: 70%;
 }
 
 ::-webkit-scrollbar{
@@ -374,22 +352,6 @@
     color: #1de1ff;
     font-size:24px;
 }
-
-/* .formation-content .line{
-    border: 1px black solid;
-    position: relative;
-    top: 27px;
-    right: 52px;
-    height: 90px;
-}
-
-.experience-content .line{
-    border: 1px black solid;
-    position: relative;
-    top: 27px;
-    right: 52px;
-    height: 90px;
-} */
 
 .date{
     background-color: green;
