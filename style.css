@@ -179,16 +179,6 @@
 
 
 .card{
-    border-radius: 15px;
-    padding: 20px;
-    width: 18em;
-    height: 14em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 2em;
-    text-align: center;
     box-shadow: 0 5px 25px rgba(100,100,100,.4);
     transition: .7s ease;
     background-color: #fefefe;
@@ -363,4 +353,10 @@
     position: fixed;
     top: 15px;
     right: 20px;
+}
+
+.main-background{
+    background-image: url("images/css_coding-wallpaper-1366x768.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
